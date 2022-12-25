@@ -1,46 +1,46 @@
-,Date,Start,Length,Elevation Gain,Heading
-0,2021-06-01,Frohburg,64.46,877,east
-1,2021-07-01,Frohburg,56.73,746,north east
-2,2021-05-03,Fork,74.24,960,south
-3,2022-05-03,Fork,74.56,925,south
-4,2021-06-03,Frohburg,68.83,660,north
-5,2022-04-05,Fork,45.43,991,south
-6,2022-07-05,Triemli,58.86,953,south west
-7,2021-08-05,Frohburg,62.8,1018,north east
-8,2020-08-06,Frohburg,56.92,851,west
-9,2022-04-07,Frohburg,49.02,676,south east
-10,2022-06-07,Frohburg,40.21,705,south east
-11,2020-07-07,Frohburg,75.73,1202,east
-12,2022-09-07,Fork,49.84,578,south
-13,2020-06-09,Fork,72.29,1012,south
-14,2022-08-09,Frohburg,67.72,1230,west
-15,2020-05-10,Frohburg,76.71,1367,south east
-16,2021-06-10,Triemli,68.77,1254,west
-17,2021-08-10,Frohburg,72.99,1011,north west
-18,2020-06-11,Frohburg,74.85,1109,south east
-19,2022-08-11,Fork,66.68,1138,south
-20,2022-04-12,Fork,70.07,1178,south
-21,2021-05-13,Fork,55.99,918,south
-22,2022-07-13,Fork,57.65,1149,south
-23,2020-08-13,Frohburg,72.41,999,north
-24,2020-07-14,Frohburg,80.09,1059,east
-25,2022-07-14,Fork,98.76,1726,south
-26,2021-06-15,Fork,68.23,1627,south
-27,2020-06-16,Fork,76.18,1328,south
-28,2022-08-16,Frohburg,73.19,1281,south east
-29,2021-08-17,Fork,74.06,1157,south east
-30,2021-05-18,Frohburg,61.34,882,south east
-31,2022-05-19,Frohburg,70.1,828,north west
-32,2021-05-20,Triemli,53.15,804,west
-33,2020-08-20,Frohburg,73.5,784,south east
-34,2020-07-21,Triemli,66.03,1236,west
-35,2022-07-21,Fork,74.93,1696,south west
-36,2022-08-23,Fork,58.87,1088,south
-37,2021-05-25,Frohburg,78.68,1391,east
-38,2021-07-25,Frohburg,55.22,918,north east
-39,2021-05-27,Frohburg,71.41,1029,north west
-40,2021-07-27,Triemli,67.55,1059,north west
-41,2020-08-27,Frohburg,67.83,686,north
-42,2021-06-29,Triemli,57.66,885,south
-43,2022-07-29,Frohburg,59.77,1075,south east
-44,2020-06-30,Frohburg,78.18,1362,south east
+Date,Start,Length,Elevation Gain,Heading
+10.05.2020,Frohburg,76.71,1367,south east
+09.06.2020,Fork,72.29,1012,south
+11.06.2020,Frohburg,74.85,1109,south east
+16.06.2020,Fork,76.18,1328,south
+30.06.2020,Frohburg,78.18,1362,south east
+07.07.2020,Frohburg,75.73,1202,east
+14.07.2020,Frohburg,80.09,1059,east
+21.07.2020,Triemli,66.03,1236,west
+06.08.2020,Frohburg,56.92,851,west
+13.08.2020,Frohburg,72.41,999,north
+20.08.2020,Frohburg,73.5,784,south east
+27.08.2020,Frohburg,67.83,686,north
+03.05.2021,Fork,74.24,960,south
+13.05.2021,Fork,55.99,918,south
+18.05.2021,Frohburg,61.34,882,south east
+20.05.2021,Triemli,53.15,804,west
+25.05.2021,Frohburg,78.68,1391,east
+27.05.2021,Frohburg,71.41,1029,north west
+01.06.2021,Frohburg,64.46,877,east
+03.06.2021,Frohburg,68.83,660,north
+10.06.2021,Triemli,68.77,1254,west
+15.06.2021,Fork,68.23,1627,south
+29.06.2021,Triemli,57.66,885,south
+01.07.2021,Frohburg,56.73,746,north east
+25.07.2021,Frohburg,55.22,918,north east
+27.07.2021,Triemli,67.55,1059,north west
+05.08.2021,Frohburg,62.8,1018,north east
+10.08.2021,Frohburg,72.99,1011,north west
+17.08.2021,Fork,74.06,1157,south east
+05.04.2022,Fork,45.43,991,south
+07.04.2022,Frohburg,49.02,676,south east
+12.04.2022,Fork,70.07,1178,south
+03.05.2022,Fork,74.56,925,south
+19.05.2022,Frohburg,70.1,828,north west
+07.06.2022,Frohburg,40.21,705,south east
+05.07.2022,Triemli,58.86,953,south west
+13.07.2022,Fork,57.65,1149,south
+14.07.2022,Fork,98.76,1726,south
+21.07.2022,Fork,74.93,1696,south west
+29.07.2022,Frohburg,59.77,1075,south east
+09.08.2022,Frohburg,67.72,1230,west
+11.08.2022,Fork,66.68,1138,south
+16.08.2022,Frohburg,73.19,1281,south east
+23.08.2022,Fork,58.87,1088,south
+07.09.2022,Fork,49.84,578,south
