@@ -173,12 +173,12 @@ with col_1:
     len = st.slider(
         'Length of the route',
         30.0, 100.0, (30.0, 100.0))
-    st.write('Values:', len)
+    
 with col1: 
     elev = st.slider(
         'Select a range of values',
         0.0, 2000.0, (0.0, 2000.0))
-    st.write('Values:', elev)
+    
 
 routes_sans = pd.read_csv(r"https://raw.githubusercontent.com/MannuelTe/weekdayDB/main/routes_DB.csv" ,index_col=0, encoding = 'unicode_escape')
 routes_sans = routes_sans.reset_index()
