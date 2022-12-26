@@ -2,7 +2,7 @@
 <gpx creator="StravaGPX" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd" version="1.1" xmlns="http://www.topografix.com/GPX/1/1">
  <metadata>
   <name>21.07.2022</name>
-  <desc>Triemli</desc>
+  <desc>Fork</desc>
   <author>
    <name>Manuel Te</name>
    <link href="https://www.strava.com/athletes/18473240"/>
@@ -15,7 +15,7 @@
  </metadata>
  <trk>
   <name>21.07.2022</name>
-  <desc>Triemli</desc>
+  <desc>Fork</desc>
   <link href="https://www.strava.com/routes/3041273134545094052"/>
   <type>Ride</type>
   <trkseg>
