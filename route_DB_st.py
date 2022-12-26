@@ -165,7 +165,6 @@ def gpx_loader(date):
 
 
 st.title("Zürides Routes")
-st.write( "zürides.ch" )
 st.subheader("In List form")
 day_of_ride = st.radio("Type of ride", ["Weekday", "Weekend", "Both"], horizontal=True)
 
@@ -237,7 +236,7 @@ st.dataframe(routes_toshow, use_container_width= True)
 ##add visual of the route
 st.subheader("Visually depicted")
 st.write("A general overview over the stored routes")
-fig_general = px.scatter(routes_toshow, x="Length", y="Elevation Gain", hover_data=['Date', "Weekday", "Start", ],color= "Start" )
+fig_general = px.scatter(routes_toshow, x="Length", y="Elevation Gain", hover_data=['Date', "Weekday", "Start", ],color= "Start", color_discrete_sequence=px.colors.qualitative.Set1)
 st.plotly_chart(fig_general, use_container_width = True)
 
 with st.expander("Analyzed by Start Point"):
@@ -245,34 +244,34 @@ with st.expander("Analyzed by Start Point"):
     routes_sp = routes_toshow[routes_toshow["Start"]== selected_start]
     #routes_sp["Date_n"] = routes_sp["Date"].dt.date
     st.write("Analysis of the length and elevation gain of the routes starting at " + selected_start + ".")
-    fig_scat = px.scatter(routes_sp, x="Length", y="Elevation Gain", hover_data=['Date', "Weekday"] ,color= "Heading" , )
+    fig_scat = px.scatter(routes_sp, x="Length", y="Elevation Gain", hover_data=['Date', "Weekday"] ,color= "Heading" , color_discrete_sequence=px.colors.qualitative.Set1)
     st.plotly_chart(fig_scat,  use_container_width= True)
 with st.expander("Histograms"):
     tab_l, tab_e, tab_s, tab_h, tab_elk, tab_hill= st.tabs(["Length", "Elevation", "Startpoint", "Heading", "Elevation/km", "Hilliness"])
     with tab_l:
         st.write("Distribution of the length per route")
-        fig_hist_len = px.histogram(routes_toshow, x = "Length", color="Start")
+        fig_hist_len = px.histogram(routes_toshow, x = "Length", color="Start", color_discrete_sequence=px.colors.qualitative.Set1)
         st.plotly_chart(fig_hist_len, use_container_width= True)
     with tab_e:
         st.write("Distribution of the elevation gain per route")
-        fig_hist_el = px.histogram(routes_toshow, x = "Elevation Gain", color="Start")
+        fig_hist_el = px.histogram(routes_toshow, x = "Elevation Gain", color="Start",color_discrete_sequence=px.colors.qualitative.Set1)
         st.plotly_chart(fig_hist_el,  use_container_width= True)
     with tab_s:
         st.write("Distribution of the start points of the routes")
-        fig_hist_s = px.histogram(routes_toshow, x = "Start", )
+        fig_hist_s = px.histogram(routes_toshow, x = "Start", color_discrete_sequence=px.colors.qualitative.Set1)
         st.plotly_chart(fig_hist_s,  use_container_width= True)
     with tab_h:
         st.write("Distribution of the headings of the routes")
-        fig_hist_h = px.histogram(routes_toshow, x = "Heading", color= "Start")
+        fig_hist_h = px.histogram(routes_toshow, x = "Heading", color= "Start", color_discrete_sequence=px.colors.qualitative.Set1)
         st.plotly_chart(fig_hist_h,  use_container_width= True)
     with tab_elk:
         st.write("Distribution of the elevation gained per kilometer")
-        fig_hist_elk = px.histogram(routes_toshow, x = "Elevation/km", color = "Start")
+        fig_hist_elk = px.histogram(routes_toshow, x = "Elevation/km", color = "Start", color_discrete_sequence=px.colors.qualitative.Set1)
         st.plotly_chart(fig_hist_elk, use_container_width = True)
     with tab_hill:
         st.caption("The variance of the elevaion (called Elevation Continuity) can be seen as how ondulating a route is. A low variance indicates many small climbs.")
         st.write("Distribution of the hilliness of the routes")
-        fig_hist_hil = px.histogram(routes, x ="Elevation Continuity", color = "Start")
+        fig_hist_hil = px.histogram(routes, x ="Elevation Continuity", color = "Start", color_discrete_sequence=px.colors.qualitative.Set1)
         st.plotly_chart(fig_hist_hil, use_container_width = True)
 with st.expander("Nerdy stuff"):
     st.write("In order to distinguish routes by the characteristics of their climbs, we have turned to economics. Variance is the easiest way to determine the volatility of an asset in a time series.")
@@ -281,13 +280,13 @@ with st.expander("Nerdy stuff"):
     st.caption("In order not to have to install scipy, the trendlines do not show but you can believe me (or check yourself) that they are more or less flat.")
     comp_elp, comp_el, comp_len = st.columns(3)
     with comp_elp:
-        fig_scat_elp = px.scatter(routes_toshow, x="Elevation Continuity", y="Elevation/km", hover_data=['Date', "Weekday"],color= "Start" , )
+        fig_scat_elp = px.scatter(routes_toshow, x="Elevation Continuity", y="Elevation/km", hover_data=['Date'],color= "Start" , )
         st.plotly_chart(fig_scat_elp, use_container_width = True)
     with comp_el:
-        fig_scat_el = px.scatter(routes_toshow, x="Elevation Continuity", y="Elevation Gain", hover_data=['Date', "Weekday"],color= "Start" , )
+        fig_scat_el = px.scatter(routes_toshow, x="Elevation Continuity", y="Elevation Gain", hover_data=['Date'],color= "Start" , )
         st.plotly_chart(fig_scat_el, use_container_width = True)
     with comp_len:
-        fig_scat_len = px.scatter(routes_toshow, x="Elevation Continuity", y="Length", hover_data=['Date', "Weekday"],color= "Start" , )
+        fig_scat_len = px.scatter(routes_toshow, x="Elevation Continuity", y="Length", hover_data=['Date'],color= "Start" , )
         st.plotly_chart(fig_scat_len, use_container_width = True)
         
 
