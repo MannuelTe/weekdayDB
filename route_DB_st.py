@@ -287,7 +287,7 @@ with st.expander("Nerdy stuff"):
         fig_scat_el = px.scatter(routes_toshow, x="Elevation Continuity", y="Elevation Gain", hover_data=['Date', "Weekday"],color= "Start" , )
         st.plotly_chart(fig_scat_el, use_container_width = True)
     with comp_len:
-        fig_scat_len = px.scatter(routes_toshow, x="Elevation Continuity", y="Length", hover_data=['Date', "Weekday],color= "Start" , )
+        fig_scat_len = px.scatter(routes_toshow, x="Elevation Continuity", y="Length", hover_data=['Date', "Weekday"],color= "Start" , )
         st.plotly_chart(fig_scat_len, use_container_width = True)
         
 
