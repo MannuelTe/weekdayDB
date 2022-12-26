@@ -165,6 +165,7 @@ def gpx_loader(date):
 
 
 st.title("Zürides Routes")
+st.write( "zürides.ch" )
 st.subheader("In List form")
 day_of_ride = st.radio("Type of ride", ["Weekday", "Weekend", "Both"], horizontal=True)
 
