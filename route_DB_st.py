@@ -281,13 +281,13 @@ with st.expander("Nerdy stuff"):
     st.caption("In order not to have to install scipy, the trendlines do not show but you can believe me (or check yourself) that they are more or less flat.")
     comp_elp, comp_el, comp_len = st.columns(3)
     with comp_elp:
-        fig_scat_elp = px.scatter(routes_toshow, x="Elevation Continuity", y="Elevation/km", hover_data=['Date'],color= "Start" , )
+        fig_scat_elp = px.scatter(routes_toshow, x="Elevation Continuity", y="Elevation/km", hover_data=['Date', "Weekday"],color= "Start" , )
         st.plotly_chart(fig_scat_elp, use_container_width = True)
     with comp_el:
-        fig_scat_el = px.scatter(routes_toshow, x="Elevation Continuity", y="Elevation Gain", hover_data=['Date'],color= "Start" , )
+        fig_scat_el = px.scatter(routes_toshow, x="Elevation Continuity", y="Elevation Gain", hover_data=['Date', "Weekday"],color= "Start" , )
         st.plotly_chart(fig_scat_el, use_container_width = True)
     with comp_len:
-        fig_scat_len = px.scatter(routes_toshow, x="Elevation Continuity", y="Length", hover_data=['Date'],color= "Start" , )
+        fig_scat_len = px.scatter(routes_toshow, x="Elevation Continuity", y="Length", hover_data=['Date', "Weekday],color= "Start" , )
         st.plotly_chart(fig_scat_len, use_container_width = True)
         
 
